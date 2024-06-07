@@ -19,10 +19,6 @@ stack * stack_create(){
     return stack;
 }
 
-stack * stack_release(){
-
-}
-
 stack * stack_push(stack *stack, void *data){
     stack_node *node = (struct stack_node*)malloc(sizeof(struct stack_node));
     if(node == NULL) return NULL;
@@ -58,8 +54,33 @@ void * stack_empty(stack *stack){
     
 }
 
+void stack_release(stack *stack){
+    stack_empty(stack);
+    free(stack);
+}
+
 
 int main(){
+    char a = 'a';
+    char b = 'b';
+    char c = 'c';
+    
+    stack *stack = stack_create();
+    printf("%p\n",stack_pop(stack));
 
+    stack_push(stack, &a);
+    printf("%p\n",stack_pop(stack));
+    stack_push(stack, &b);
+    stack_push(stack, &c);
+
+    while(stack->length){
+        printf("%c\n", *(char*)stack_pop(stack));
+    }
+    
+    stack_push(stack, &a);
+    stack_empty(stack);
+    printf("%p\n", stack_pop(stack));
+    
+    stack_release(stack);
     return 0;
 }
