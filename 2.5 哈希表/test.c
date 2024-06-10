@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "dict.h"
+#include "dict.c"
 
 int main()
 {   

@@ -4,7 +4,9 @@
     "*.cpp": "cpp",
     "stack.h": "c",
     "initializer_list": "c",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "stdlib.h": "c",
+    "tree.h": "c"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",

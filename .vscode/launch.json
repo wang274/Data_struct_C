@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "f:/C/learn-data-structures/2.1 单链表",
-      "program": "f:/C/learn-data-structures/2.1 单链表/build/Debug/outDebug",
+      "cwd": "f:/C/learn-data-structures/Code",
+      "program": "f:/C/learn-data-structures/Code/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
