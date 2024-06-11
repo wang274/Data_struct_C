@@ -6,7 +6,12 @@
     "initializer_list": "c",
     "stdio.h": "c",
     "stdlib.h": "c",
-    "tree.h": "c"
+    "tree.h": "c",
+    "bst.h": "c",
+    "*.tcc": "c",
+    "string_view": "c",
+    "istream": "c",
+    "limits": "c"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",

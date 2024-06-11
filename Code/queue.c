@@ -21,7 +21,7 @@ queue *queue_push(queue *queue, void *data){
     queue_node *node = (queue_node*)malloc(sizeof(queue_node));
     if(node == NULL) return NULL;
     node ->data = data;
-    queue->tail->next=node;
+    queue->tail -> next = node;
     node ->next = NULL;
     queue ->tail = queue->tail->next;
     queue ->length++;

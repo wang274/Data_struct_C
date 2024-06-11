@@ -2,7 +2,7 @@
 #define __Queue_H__
 
 typedef struct queue_node {
-    struct quque_node *next;
+    struct queue_node *next;
     void *data;
 }queue_node;
 
